@@ -18,7 +18,7 @@ function getData() {
     console.log(data.events.event);
     // data.events.event.each(console.log(event.title));
     for (var i=0; i < data.events.event.length; i++) {
-      $('#shows').append('<li>'+data.events.event[i].startDate+" "+data.events.event[i].venue.name+" "+data.events.event[i].venue.location.city+ ","+data.events.event[i].venue.location.country+"</li>");
+      $('#shows').append('<li>'+data.events.event[i].startDate+" "+data.events.event[i].venue.name+" "+data.events.event[i].venue.location.city+ ", "+data.events.event[i].venue.location.country+"</li>");
     }
   });
 }
