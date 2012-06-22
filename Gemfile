@@ -22,7 +22,7 @@ group :assets do
 end
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platform => :ruby
+gem 'therubyracer', :platform => :ruby
 
 
 
