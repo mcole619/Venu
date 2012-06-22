@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $('#search-artist input').keypress(function(e) {
     if (e.keyCode === 13) {
+			$("header").slideUp();
       getData();
     }
   });  
@@ -25,8 +26,8 @@ function getData() {
 		} else if (data.events["@attr"].artist === artist) {
 			displayData(data.events.event, artist);
 		} else {
-			$("#artist-name").append("Did you mean "+data.events["@attr"].artist+
-			", ya dingus?<br /><button id='autocorrect-correct' class='btn btn-success'>You're right, I did mean "+
+			$("#artist-name").append("Did you mean '"+data.events["@attr"].artist+
+			"', ya dingus?<br /><button id='autocorrect-correct' class='btn btn-success'>You're right, I did mean "+
 			data.events["@attr"].artist+
 			".</button><br /><button id='autocorrect-incorrect' class='btn btn-danger'>No, you're the dingus! Show me shows for "+
 			origArtist+".</button>");
