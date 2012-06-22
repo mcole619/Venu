@@ -13,7 +13,7 @@ function getData() {
   var artist = $('#search-artist input').val();
   $("#artist-name").append(artist);
   $.ajax({
-    url: "http://ws.audioscrobbler.com/2.0/?method=artist.getevents&artist="+artist+"&api_key=894064fca12d26335a68f014d98f4145&format=json"
+    url: "http://ws.audioscrobbler.com/2.0/?method=artist.getevents&artist="+artist+"&autocorrect[true]&api_key=894064fca12d26335a68f014d98f4145&format=json"
   }).done(function ( data ) {
     console.log(data.events.event);
     // data.events.event.each(console.log(event.title));

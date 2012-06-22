@@ -12,14 +12,11 @@ header{
   text-shadow: 2px 2px 0 white;
   font-size: 200px;
   line-height: 200px;
-  padding: 5px;
+  padding: 20px;
   font-weight: bold;
 }
 
-#artist-name {
-  font-size: 24px;
-  margin: 10px;
-}
+
 
 #intro{
   text-shadow: 1px 1px 0 white;
@@ -27,15 +24,40 @@ header{
   padding: 10px;
   font-weight: bold;
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 #search-artist{
-  padding: 20px;
+  padding-top: 60px;
 }
 
+input.form-search{
+  width:700px;
+  height: 55px;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 5px;
+}
+
+#submit{
+  height: 64px;
+  width:120px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+#artist-name {
+  font-size: 24px;
+  margin: 30px;
+}
+
+#shows{
+  margin-bottom: 80px;
+}
 
 #shows li{
   list-style-type: none;
   font-size: 20px;
   line-height: 30px;
+  margin-bottom: 20px;
 }
