@@ -15,8 +15,10 @@ function getData() {
 	console.log(artist);
   $.ajax({
     url: "http://ws.audioscrobbler.com/2.0/?method=artist.getevents&artist="+artist+"&autocorrect=1&api_key=894064fca12d26335a68f014d98f4145&format=json"
+
   }).done(function(data){
 		console.log(data);
+
     console.log(data.events.event);
 		//console.log(data.events["@attr"].artist);
 		if (data.events.total === "0"){
