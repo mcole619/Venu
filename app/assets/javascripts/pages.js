@@ -7,35 +7,38 @@ $(document).ready(function() {
   });  
 });
 
-$(function() {
-		var availableTags = [
-			"ActionScript",
-			"AppleScript",
-			"Asp",
-			"BASIC",
-			"C",
-			"C++",
-			"Clojure",
-			"COBOL",
-			"ColdFusion",
-			"Erlang",
-			"Fortran",
-			"Groovy",
-			"Haskell",
-			"Java",
-			"JavaScript",
-			"Lisp",
-			"Perl",
-			"PHP",
-			"Python",
-			"Ruby",
-			"Scala",
-			"Scheme"
-		];
-		$( "#search-artist input" ).autocomplete({
-			source: availableTags
-		});
-	});
+// $(function() {
+//     $.ajax({
+//       url: 'http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=all&api_key=894064fca12d26335a68f014d98f4145&format=json&limit=none'
+//     })
+//    var availableTags = [
+//      "ActionScript",
+//      "AppleScript",
+//      "Asp",
+//      "BASIC",
+//      "C",
+//      "C++",
+//      "Clojure",
+//      "COBOL",
+//      "ColdFusion",
+//      "Erlang",
+//      "Fortran",
+//      "Groovy",
+//      "Haskell",
+//      "Java",
+//      "JavaScript",
+//      "Lisp",
+//      "Perl",
+//      "PHP",
+//      "Python",
+//      "Ruby",
+//      "Scala",
+//      "Scheme"
+//    ];
+//    $( "#search-artist input" ).autocomplete({
+//      source: availableTags
+//    });
+//  });
 
 function getData() {    
   $('#artist-name').html("");
