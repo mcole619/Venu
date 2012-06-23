@@ -1,11 +1,3 @@
-$(document).ready(function() {
-  $('#search-artist input').keypress(function(e) {
-    if (e.keyCode === 13) {
-      getData();
-    }
-  });  
-});
-
 // $(function() {
 //     $.ajax({
 //       url: 'http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=all&api_key=894064fca12d26335a68f014d98f4145&format=json&limit=none'
@@ -38,7 +30,6 @@ $(document).ready(function() {
 //      source: availableTags
 //    });
 //  });
-
 
 function getData() {
 	$("header").slideUp();    
@@ -102,12 +93,3 @@ function sortData(data){
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
