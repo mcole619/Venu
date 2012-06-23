@@ -6,6 +6,7 @@ body {
   background: url(/assets/background.jpg);
   font-family: helvetica;
   text-align: center;
+  min-width: 990px;
 }
 
 header{
@@ -36,14 +37,18 @@ input.form-search{
   height: 55px;
   font-size: 24px;
   line-height: 24px;
-  padding: 5px;
+  padding: 10px;
 }
 
 #submit{
-  height: 64px;
+  height: 75px;
   width:120px;
   font-size: 24px;
   line-height: 24px;
+}
+
+#submit img{
+  width:35%;
 }
 
 #artist-name {
