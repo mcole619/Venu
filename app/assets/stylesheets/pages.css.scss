@@ -58,7 +58,9 @@ input.form-search{
 }
 
 #shows{
-  margin-bottom: 80px;
+  text-align: left;
+	width: 960px;
+	margin: auto;
 }
 
 #shows li{
@@ -66,4 +68,8 @@ input.form-search{
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 20px;
+}
+
+.cancelled{
+	color: red;
 }
